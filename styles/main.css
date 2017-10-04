@@ -127,7 +127,7 @@ h2 {
     display: block; }
   .no-flexbox #main-content .dog-section .wrap, .no-flexbox #main-content .dog-section .pic {
     width: 100%; }
-  .no-flexbox #main-content .dog-section .pic {
+  .no-flexbox #main-content .dog-section img {
     margin: 0 auto; } }
 header {
   text-align: center; }
