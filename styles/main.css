@@ -12,8 +12,17 @@ a {
   outline: none; }
 
 #main-content .intro {
-  padding: 100px 0; }
+  padding: 100px 0;
+  text-align: center; }
+  #main-content .intro h1 {
+    font-size: 2em; }
 
+@media only screen and (min-width: 768px) {
+  #main-content .intro {
+    max-width: 840px;
+    margin: 0 auto; }
+    #main-content .intro h1 {
+      font-size: 3.25em; } }
 header {
   text-align: center; }
   header #banner {
