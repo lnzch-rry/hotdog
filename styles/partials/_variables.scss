@@ -5,6 +5,7 @@ $open: 'Open Sans', serif;
 $grey: #2e2e2e;
 $lighter-grey: #555559;
 $light: #efefef;
+$offwhite: #fbfafa;
 $blue: #286782;
 
 // mixins
@@ -39,6 +40,13 @@ $blue: #286782;
     -webkit-box-direction: reverse;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
+}
+
+@mixin flex-col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
 }
 
 // mixin for smooth transitions

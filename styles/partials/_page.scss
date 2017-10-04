@@ -1,13 +1,15 @@
 // more specific page and section styles
 #main-content {
+	background: $offwhite;
+	margin-bottom: -10px;
 
+	// intro styles
 	.intro {
-		padding: 60px 0;
+		padding: 60px 0 100px;
 		text-align: center;
 		color: $lighter-grey;
 
 		h1 {
-			font-size: 2em;
 			font-weight: 300;
 			letter-spacing: -1.75px;
 			margin: 35px 0 75px;
@@ -28,14 +30,45 @@
 		}
 	}
 
+	// styles for hot dog listings
+	.dog-section {
+		background: white;
+		color: $lighter-grey;
+
+		h2 {
+			letter-spacing: -1px;
+			margin-bottom: 40px;
+		}
+
+	}
+
+	// row specific styles
+	.row {
+
+		.wrap {
+			width: 80%;
+			margin: 0 auto;
+			padding: 50px 0;
+		}
+
+	}
+
+	// switch vegan photo and description for flow
+	.row.vegan {
+		@include flexit;
+		@include flex-reverse;
+		@include flex-col;
+	}
+
 }
 
+// desktop styles
 @media only screen and (min-width: 768px) {
 
 	#main-content {
 
 		.intro {
-			padding: 100px 0;
+			padding: 100px 0 150px;
 			max-width: 840px;
 			margin: 0 auto;
 
@@ -48,6 +81,26 @@
 			}
 
 		}
+
+		// dog section styles
+		p {
+			font-size: 1.125em;
+		}
+
+	}
+
+	// row specific styles
+	.row {
+		@include flexit;
+		@include flex-center;
+
+		.wrap, .pic {
+			width: 50%; // equal columns
+		}
+
+			.wrap {
+				padding: 0 10%;
+			}
 	}
 
 }
