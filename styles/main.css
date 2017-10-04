@@ -28,8 +28,7 @@ h2 {
   h2 {
     font-size: 1.5em; } }
 #main-content {
-  background: #fbfafa;
-  margin-bottom: -10px; }
+  background: #fbfafa; }
   #main-content .intro {
     padding: 60px 0 100px;
     text-align: center;
@@ -58,6 +57,10 @@ h2 {
     #main-content .dog-section h2 {
       letter-spacing: -1px;
       margin-bottom: 40px; }
+    #main-content .dog-section p {
+      font-weight: 300; }
+    #main-content .dog-section img {
+      display: block; }
   #main-content .row .wrap {
     width: 80%;
     margin: 0 auto;
@@ -87,17 +90,23 @@ h2 {
   #main-content p {
     font-size: 1.125em; }
 
-  .row {
+  #main-content .row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-    .row .wrap, .row .pic {
+    #main-content .row .wrap, #main-content .row .pic {
       width: 50%; }
-    .row .wrap {
-      padding: 0 10%; } }
+    #main-content .row h2, #main-content .row p {
+      padding: 0 10%; }
+
+  #main-content .row.vegan {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; } }
 header {
   text-align: center; }
   header #banner {

@@ -1,7 +1,6 @@
 // more specific page and section styles
 #main-content {
 	background: $offwhite;
-	margin-bottom: -10px;
 
 	// intro styles
 	.intro {
@@ -38,6 +37,14 @@
 		h2 {
 			letter-spacing: -1px;
 			margin-bottom: 40px;
+		}
+
+		p {
+			font-weight: 300;
+		}
+
+		img {
+			display: block;
 		}
 
 	}
@@ -90,7 +97,7 @@
 	}
 
 	// row specific styles
-	.row {
+	#main-content .row {
 		@include flexit;
 		@include flex-center;
 
@@ -98,9 +105,13 @@
 			width: 50%; // equal columns
 		}
 
-			.wrap {
-				padding: 0 10%;
-			}
+		h2, p {
+			padding: 0 10%;
+		}
 	}
 
+	#main-content .row.vegan {
+		@include flex-row;
+	}
+	
 }
