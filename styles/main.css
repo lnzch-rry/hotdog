@@ -73,7 +73,8 @@ h2 {
       margin-left: 50px; }
     #main-content .dog-section p {
       font-weight: 300;
-      margin-left: 50px; }
+      margin-left: 50px;
+      letter-spacing: -0.75px; }
     #main-content .dog-section img {
       display: block; }
   #main-content .row.vegan {
@@ -127,6 +128,14 @@ header {
     background: url("../img/photo-grid.jpg") no-repeat top right;
     background-size: cover;
     height: 65vh; }
+  header .hashtag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    margin: 0;
+    color: white;
+    font-weight: 600;
+    font-size: .9em; }
   header nav ul {
     position: relative;
     z-index: 10;
