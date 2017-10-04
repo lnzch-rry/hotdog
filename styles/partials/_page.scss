@@ -130,11 +130,16 @@
 				font-size: 1.125em;
 			}
 		}
+	}
 
-		//fallbacks
-		.no-flexbox {
+	#main-content .row.vegan {
+		@include flex-row; // reverse the reverse
+	}
+
+	//fallbacks
+	.no-flexbox {
+		#main-content {
 			.dog-section {
-
 				// row specific measurements and styles
 				.row {
 					display: block;
@@ -145,10 +150,6 @@
 				}
 			}
 		}
-	}
-
-	#main-content .row.vegan {
-		@include flex-row; // reverse the reverse
 	}
 	
 }

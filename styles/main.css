@@ -116,16 +116,17 @@ h2 {
       margin-left: 0; }
   #main-content .dog-section p {
     font-size: 1.125em; }
-  #main-content .no-flexbox .dog-section .row {
-    display: block; }
-  #main-content .no-flexbox .dog-section .wrap, #main-content .no-flexbox .dog-section .pic {
-    width: 100%; }
 
   #main-content .row.vegan {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-    flex-direction: row; } }
+    flex-direction: row; }
+
+  .no-flexbox #main-content .dog-section .row {
+    display: block; }
+  .no-flexbox #main-content .dog-section .wrap, .no-flexbox #main-content .dog-section .pic {
+    width: 100%; } }
 header {
   text-align: center; }
   header #banner {
