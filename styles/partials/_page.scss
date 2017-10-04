@@ -134,48 +134,15 @@
 		//fallbacks
 		.no-flexbox {
 			.dog-section {
-				background: white;
-				color: $lighter-grey;
 
 				// row specific measurements and styles
 				.row {
-
-					.wrap {
-						width: 80%;
-						margin: 0 auto;
-						padding: 50px 0;
-						position: relative;
-					}
-
-				}
-
-				// colored line
-				.wrap:before {
-					content: "\2014";
-				    font-weight: bold;
-				    color: $blue;
-				    left: 0;
-				    top: 60px;
-				    position: absolute;
-				    font-size: 25px;
-				}
-
-				h2 {
-					letter-spacing: -1px;
-					margin-bottom: 40px;
-					margin-left: 50px;
-				}
-
-				p {
-					font-weight: 300;
-					margin-left: 50px;
-					letter-spacing: -0.75px;
-				}
-
-				img {
 					display: block;
 				}
 
+				.wrap, .pic {
+					width: 100%; // equal columns
+				}
 			}
 		}
 	}

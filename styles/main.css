@@ -116,32 +116,10 @@ h2 {
       margin-left: 0; }
   #main-content .dog-section p {
     font-size: 1.125em; }
-  #main-content .no-flexbox .dog-section {
-    background: white;
-    color: #555559; }
-    #main-content .no-flexbox .dog-section .row .wrap {
-      width: 80%;
-      margin: 0 auto;
-      padding: 50px 0;
-      position: relative; }
-    #main-content .no-flexbox .dog-section .wrap:before {
-      content: "\2014";
-      font-weight: bold;
-      color: #286782;
-      left: 0;
-      top: 60px;
-      position: absolute;
-      font-size: 25px; }
-    #main-content .no-flexbox .dog-section h2 {
-      letter-spacing: -1px;
-      margin-bottom: 40px;
-      margin-left: 50px; }
-    #main-content .no-flexbox .dog-section p {
-      font-weight: 300;
-      margin-left: 50px;
-      letter-spacing: -0.75px; }
-    #main-content .no-flexbox .dog-section img {
-      display: block; }
+  #main-content .no-flexbox .dog-section .row {
+    display: block; }
+  #main-content .no-flexbox .dog-section .wrap, #main-content .no-flexbox .dog-section .pic {
+    width: 100%; }
 
   #main-content .row.vegan {
     -webkit-box-orient: horizontal;
