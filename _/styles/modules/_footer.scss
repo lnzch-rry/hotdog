@@ -1,0 +1,27 @@
+footer {
+	font-family: $muli;
+	color: white;
+	
+
+	p {
+		text-align: center;
+		font-size: 14px;
+		padding: 0 20px;
+		a {
+			color: white;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+@media only screen and (min-width: 690px) {
+
+  footer {
+  	position: absolute;
+	bottom: 0;
+	width: 100%;
+  }
+
+}

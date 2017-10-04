@@ -1,0 +1,57 @@
+#main-content {
+	height: auto;
+	font-family: $muli;
+	text-align: center;
+	padding: 50px 0;
+	color: white;
+}
+
+#answer {
+	display: none;
+}
+
+.questionGroup2, 
+.questionGroup3, 
+.questionGroup4,
+.questionGroup5,
+.questionGroup6 {
+	display: none;
+}
+
+.answerDescription {
+	max-width: 600px;
+	margin: 30px auto;
+	font-size: 1.4em;
+}
+
+radiogroup {
+	font-size: 1.4em;
+}
+
+	radiogroup input {
+		margin-bottom: 10px;
+	}
+
+.resetButton {
+	font-size: 1em;
+    background: transparent;
+    border: solid 3px white;
+    padding: 5px 20px;
+    color: white;
+    font-family: $ovo;
+}
+
+	.resetButton:hover {
+		background: white;
+		color: black;
+	}
+
+@media only screen and (min-width: 690px) {
+
+  	#main-content {
+		height: 100vh;
+		@include flexit;
+		@include flex-center;
+	}
+
+}

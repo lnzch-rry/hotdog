@@ -1,0 +1,10 @@
+body {
+  background: url("../img/bread.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh; }
+
+#main-content {
+  background: rgba(0, 0, 0, 0.2);
+  height: 100vh; }
+
+/*# sourceMappingURL=_page.css.map */

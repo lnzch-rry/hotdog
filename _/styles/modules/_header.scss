@@ -1,0 +1,41 @@
+header {
+	text-align: center;
+
+	nav li {
+		display: inline-block;
+		padding: 0 0 0 5px;
+	}
+
+		nav li.start {
+			padding: 0 20px 0 0;
+		}
+
+		nav a {
+			color: white;
+			font-family: $muli;
+		}
+
+	.addthis_inline_share_toolbox {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+}
+
+@media only screen and (min-width: 690px) {
+
+	header {
+		background: transparent;
+    	position: absolute;
+    	width: 100%;
+    	top: 0;
+    	z-index: 90;
+	}
+
+  	header .wrap {
+		@include flexit;
+		@include flex-justify;
+		@include flex-center;
+	}
+
+}
