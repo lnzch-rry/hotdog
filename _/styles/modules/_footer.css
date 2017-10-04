@@ -1,9 +1,16 @@
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  color: white; }
-  footer p {
-    text-align: center; }
+footer p {
+  text-align: center;
+  font-size: 14px;
+  padding: 0 20px; }
+  footer p a {
+    color: white; }
+  footer p a:hover {
+    text-decoration: underline; }
+
+@media only screen and (min-width: 690px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%; } }
 
 /*# sourceMappingURL=_footer.css.map */
