@@ -11,6 +11,9 @@ a {
   text-decoration: none;
   outline: none; }
 
+#main-content .intro {
+  padding: 100px 0; }
+
 header {
   text-align: center; }
   header #banner {
@@ -41,22 +44,20 @@ header {
 @media only screen and (min-width: 768px) {
   header nav li {
     display: inline-block;
-    padding: 0 40px; }
+    padding: 0 30px; }
     header nav li a {
-      font-size: 1.250em; } }
-footer p {
-  text-align: center;
-  font-size: 14px;
-  padding: 0 20px; }
-  footer p a {
-    color: white; }
-  footer p a:hover {
-    text-decoration: underline; }
+      font-size: 1.2em; } }
+footer {
+  background: #efefef;
+  padding: 30px 20px;
+  font-size: .875em; }
+  footer .copyright {
+    margin-bottom: 10px; }
 
-@media only screen and (min-width: 690px) {
-  footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%; } }
+@media only screen and (min-width: 768px) {
+  footer .copyright {
+    float: left; }
+  footer .footer-contact {
+    text-align: right; } }
 
 /*# sourceMappingURL=main.css.map */

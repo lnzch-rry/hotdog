@@ -1,24 +1,23 @@
 footer {
-	
-	p {
-		text-align: center;
-		font-size: 14px;
-		padding: 0 20px;
-		a {
-			color: white;
-		}
-		a:hover {
-			text-decoration: underline;
-		}
+	background: $light;
+	padding: 30px 20px;
+	font-size: .875em;
+
+	.copyright {
+		margin-bottom: 10px;
 	}
 }
 
-@media only screen and (min-width: 690px) {
+@media only screen and (min-width: 768px) {
 
-  footer {
-  	position: absolute;
-	bottom: 0;
-	width: 100%;
-  }
+	footer {
+		.copyright {
+			float: left;
+		}
+		
+		.footer-contact {
+			text-align: right;
+		}
+	}
 
 }

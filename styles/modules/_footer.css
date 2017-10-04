@@ -7,10 +7,4 @@ footer p {
   footer p a:hover {
     text-decoration: underline; }
 
-@media only screen and (min-width: 690px) {
-  footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%; } }
-
 /*# sourceMappingURL=_footer.css.map */
