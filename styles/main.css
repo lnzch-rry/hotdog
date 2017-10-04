@@ -7,35 +7,43 @@ html, body {
   width: 80%;
   margin: 0 auto; }
 
+a {
+  text-decoration: none;
+  outline: none; }
+
 header {
   text-align: center; }
+  header #banner {
+    background: url("../img/photo-grid.jpg") no-repeat top right;
+    background-size: cover;
+    height: 65vh; }
+  header nav ul {
+    padding: 35px 0;
+    margin: 0;
+    -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.11);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.11); }
   header nav li {
     display: inline-block;
-    padding: 0 0 0 5px; }
-  header nav li.start {
-    padding: 0 20px 0 0; }
-  header .addthis_inline_share_toolbox {
+    padding: 0 2%; }
+    header nav li a {
+      font-weight: 600;
+      color: #2e2e2e;
+      text-transform: uppercase;
+      letter-spacing: .75px;
+      -webkit-transition: all .3s ease, opacity .3s ease;
+      -moz-transition: all .3s ease, opacity .3s ease;
+      -o-transition: all .3s ease, opacity .3s ease;
+      transition: all .3s ease, opacity .3s ease; }
+    header nav li a:hover {
+      color: #6e6e6e; }
+
+@media only screen and (min-width: 768px) {
+  header nav li {
     display: inline-block;
-    vertical-align: middle; }
-
-@media only screen and (min-width: 690px) {
-  header {
-    background: transparent;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: 90; }
-
-  header .wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; } }
+    padding: 0 40px; }
+    header nav li a {
+      font-size: 1.250em; } }
 footer p {
   text-align: center;
   font-size: 14px;

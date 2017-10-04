@@ -1,4 +1,20 @@
-header h1 {
-  color: white; }
+header {
+  text-align: center; }
+  header #banner {
+    background: url("../img/photo-grid.jpg") no-repeat center;
+    background-size: cover;
+    height: 60vh; }
+  header nav ul {
+    padding: 40px 0; }
+  header nav li {
+    display: inline-block;
+    padding: 0 2%; }
+    header nav li a {
+      font-weight: bold; }
+
+@media only screen and (min-width: 768px) {
+  header nav li {
+    display: inline-block;
+    padding: 0 40px; } }
 
 /*# sourceMappingURL=_header.css.map */
