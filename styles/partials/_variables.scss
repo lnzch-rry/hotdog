@@ -1,8 +1,15 @@
+// font vars
 $open: 'Open Sans', serif;
+
+// colors
 $grey: #2e2e2e;
+$lighter-grey: #555559;
 $light: #efefef;
+$blue: #286782;
 
 // mixins
+
+// mixins for flex
 @mixin flexit {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -32,4 +39,12 @@ $light: #efefef;
     -webkit-box-direction: reverse;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
+}
+
+// mixin for smooth transitions
+@mixin transition {
+    -webkit-transition: all .3s ease, opacity .3s ease;
+    -moz-transition: all .3s ease, opacity .3s ease;
+    -o-transition: all .3s ease, opacity .3s ease;
+    transition: all .3s ease, opacity .3s ease;
 }

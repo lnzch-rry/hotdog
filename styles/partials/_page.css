@@ -1,14 +1,17 @@
 #main-content .intro {
-  padding: 100px 0;
+  padding: 60px 0;
   text-align: center; }
   #main-content .intro h1 {
-    font-size: 2em; }
+    font-size: 2em;
+    font-weight: 300; }
 
 @media only screen and (min-width: 768px) {
   #main-content .intro {
+    padding: 100px 0;
     max-width: 840px;
     margin: 0 auto; }
     #main-content .intro h1 {
-      font-size: 3.25em; } }
+      font-size: 3.25em;
+      margin: 35px 0 75px; } }
 
 /*# sourceMappingURL=_page.css.map */

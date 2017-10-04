@@ -24,10 +24,7 @@ header {
 			color: $grey;
 			text-transform: uppercase;
 			letter-spacing: .75px;
-			-webkit-transition: all .3s ease, opacity .3s ease;
-     		-moz-transition: all .3s ease, opacity .3s ease;
-     		-o-transition: all .3s ease, opacity .3s ease;
-     		transition: all .3s ease, opacity .3s ease;
+			@include transition;
 		}
 		a:hover {
 			color: lighten($grey, 25%);

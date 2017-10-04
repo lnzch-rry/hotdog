@@ -1,11 +1,30 @@
+// more specific page and section styles
 #main-content {
 
 	.intro {
-		padding: 100px 0;
+		padding: 60px 0;
 		text-align: center;
+		color: $lighter-grey;
 
 		h1 {
 			font-size: 2em;
+			font-weight: 300;
+			letter-spacing: -1.75px;
+			margin: 35px 0 75px;
+		}
+
+		.button {
+			background: $blue;
+			color: white;
+			padding: 25px;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			font-weight: 600;
+			@include transition;
+		}
+		.button:hover {
+			background: lighten($blue, 10%);
 		}
 	}
 
@@ -14,13 +33,20 @@
 @media only screen and (min-width: 768px) {
 
 	#main-content {
+
 		.intro {
+			padding: 100px 0;
 			max-width: 840px;
 			margin: 0 auto;
 
 			h1 {
 				font-size: 3.25em;
 			}
+
+			.button {
+				font-size: 1.2em;
+			}
+
 		}
 	}
 
