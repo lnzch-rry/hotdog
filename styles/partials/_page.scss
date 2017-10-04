@@ -136,21 +136,21 @@
 		@include flex-row; // reverse the reverse
 	}
 
-	//fallbacks
+	//fallbacks for older browsers
 	.no-flexbox {
 		#main-content {
 			.dog-section {
-				// row specific measurements and styles
+				// don't use flexbox
 				.row {
 					display: block;
 				}
 
 				.wrap, .pic {
-					width: 100%; // equal columns
+					width: 100%; // full width columns
 				}
 
 				.pic {
-					margin: 0 auto;
+					margin: 0 auto; // try to get the pics looking the best they can
 				}
 			}
 		}
