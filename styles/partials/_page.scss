@@ -34,13 +34,38 @@
 		background: white;
 		color: $lighter-grey;
 
+		// row specific measurements and styles
+		.row {
+
+			.wrap {
+				width: 80%;
+				margin: 0 auto;
+				padding: 50px 0;
+				position: relative;
+			}
+
+		}
+
+		// colored line
+		.wrap:before {
+			content: "\2014";
+		    font-weight: bold;
+		    color: $blue;
+		    left: 0;
+		    top: 60px;
+		    position: absolute;
+		    font-size: 25px;
+		}
+
 		h2 {
 			letter-spacing: -1px;
 			margin-bottom: 40px;
+			margin-left: 50px;
 		}
 
 		p {
 			font-weight: 300;
+			margin-left: 50px;
 		}
 
 		img {
@@ -49,18 +74,7 @@
 
 	}
 
-	// row specific styles
-	.row {
-
-		.wrap {
-			width: 80%;
-			margin: 0 auto;
-			padding: 50px 0;
-		}
-
-	}
-
-	// switch vegan photo and description for flow
+	// reverse vegan photo and description for flow
 	.row.vegan {
 		@include flexit;
 		@include flex-reverse;
@@ -90,28 +104,35 @@
 		}
 
 		// dog section styles
-		p {
-			font-size: 1.125em;
-		}
+		// row specific flex styles
+		.dog-section {
+			.row {
+				@include flexit;
+				@include flex-center;
 
-	}
+				.wrap:before {
+					left: 10%;
+					top: 67px;
+				}
 
-	// row specific styles
-	#main-content .row {
-		@include flexit;
-		@include flex-center;
+				.wrap, .pic {
+					width: 50%; // equal columns
+				}
 
-		.wrap, .pic {
-			width: 50%; // equal columns
-		}
+				h2, p {
+					padding: 0 17%;
+					margin-left: 0;
+				}
+			}
 
-		h2, p {
-			padding: 0 10%;
+			p {
+				font-size: 1.125em;
+			}
 		}
 	}
 
 	#main-content .row.vegan {
-		@include flex-row;
+		@include flex-row; // reverse the reverse
 	}
 	
 }

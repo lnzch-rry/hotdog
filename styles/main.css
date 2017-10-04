@@ -54,17 +54,28 @@ h2 {
   #main-content .dog-section {
     background: white;
     color: #555559; }
+    #main-content .dog-section .row .wrap {
+      width: 80%;
+      margin: 0 auto;
+      padding: 50px 0;
+      position: relative; }
+    #main-content .dog-section .wrap:before {
+      content: "\2014";
+      font-weight: bold;
+      color: #286782;
+      left: 0;
+      top: 60px;
+      position: absolute;
+      font-size: 25px; }
     #main-content .dog-section h2 {
       letter-spacing: -1px;
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      margin-left: 50px; }
     #main-content .dog-section p {
-      font-weight: 300; }
+      font-weight: 300;
+      margin-left: 50px; }
     #main-content .dog-section img {
       display: block; }
-  #main-content .row .wrap {
-    width: 80%;
-    margin: 0 auto;
-    padding: 50px 0; }
   #main-content .row.vegan {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -87,20 +98,23 @@ h2 {
       font-size: 3.25em; }
     #main-content .intro .button {
       font-size: 1.2em; }
-  #main-content p {
-    font-size: 1.125em; }
-
-  #main-content .row {
+  #main-content .dog-section .row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-    #main-content .row .wrap, #main-content .row .pic {
+    #main-content .dog-section .row .wrap:before {
+      left: 10%;
+      top: 67px; }
+    #main-content .dog-section .row .wrap, #main-content .dog-section .row .pic {
       width: 50%; }
-    #main-content .row h2, #main-content .row p {
-      padding: 0 10%; }
+    #main-content .dog-section .row h2, #main-content .dog-section .row p {
+      padding: 0 17%;
+      margin-left: 0; }
+  #main-content .dog-section p {
+    font-size: 1.125em; }
 
   #main-content .row.vegan {
     -webkit-box-orient: horizontal;
